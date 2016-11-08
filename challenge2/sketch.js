@@ -6,8 +6,8 @@ var delimiters = "?,. \':;";
 
 var parsed;
 var counter = 0;
-var x;
-var y;
+var x = 0;
+var y = 0;
 
 function preload(){
   webtext = loadStrings("data/trumpspeech.txt");
@@ -34,9 +34,10 @@ function draw() {
       //console.log(counter);
       fill(0);
       textSize(100);
-      text(parsed[i], 200, 200)
-      /*text(parsed[i],x,y);
-     // y+=50;
+      //text(parsed[i], 200, 200)
+      text(parsed[i],x,y);
+      
+      y += 50;
       x = x + 50;
       
       if (x > width){
@@ -46,7 +47,7 @@ function draw() {
       
       if (y > height){
         x = 0;
-      } */
+      } 
       
     }
   }
