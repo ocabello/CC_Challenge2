@@ -33,12 +33,12 @@ function draw() {
       counter++;
       //console.log(counter);
       fill(0);
-      textSize(100);
+      textSize(counter);
       //text(parsed[i], 200, 200)
       text(parsed[i],x,y);
       
-      y += 50;
-      x = x + 50;
+      y += 10;
+      x = x + 10;
       
       if (x > width){
         x = 0;
