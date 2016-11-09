@@ -31,9 +31,13 @@ function draw() {
 
       //console.log(parsed[i]);
       counter++;
-      //console.log(counter);
-      fill(0);
-      wordFormat(parsed[i], counter);
+      console.log(counter);
+     // for(var j = 0; j < counter; j++){
+        var shape = new Visual(random(0,500), random(0,500));
+        shape.show(color(0, 0, 0), random(0,6));
+    //  }
+      //fill(0);
+      //wordFormat(parsed[i], counter);
     }
     
     if (parsed[i] == "illegal"){
